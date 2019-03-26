@@ -1,0 +1,41 @@
+#filter {
+  background: $light-color;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+form {
+  background: $light-color;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  button,
+  .button,
+  input[type="submit"] {
+    &:hover {
+      background: $primary-color;
+    }
+  }
+}
+
+input[type="text"],
+select {
+  border: 2px solid $light-color;
+  outline: 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  font: 400 0.8rem $mainFont;
+  color: $primary-color;
+  &:focus {
+    outline: 0;
+    border: 2px solid $secondary-color;
+  }
+}

@@ -1,0 +1,102 @@
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+
+html {
+  line-height: $mainLineHeight;
+  font-size: $mainFontSize;
+  color: $mainFontColor;
+  height: 100%;
+  @media screen and (max-width: $desktopWidth) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: $tableWidth) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    font-size: 14px;
+  }
+}
+
+body {
+  font-family: $mainFont;
+  font-family: $mainFontSize;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 60px);
+  max-width: $desktopWidth;
+  margin: 0 auto;
+  @media screen and (max-width: $desktopWidth) {
+    margin: 0 36px;
+  }
+  @media screen and (max-width: $desktopWidth) {
+    margin: 0 28px;
+  }
+  @media screen and (max-width: $desktopWidth) {
+    margin: 0 20px;
+  }
+}
+
+section {
+  position: relative;
+  padding: 40px 0;
+  @media screen and (max-width: $desktopWidth) {
+    padding: 36px 0;
+  }
+  @media screen and (max-width: $desktopWidth) {
+    padding: 28px 0;
+  }
+  @media screen and (max-width: $desktopWidth) {
+    padding: 20px 0;
+  }
+}
+
+button,
+.button,
+input[type="submit"] {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: $secondary-color;
+  color: $default-color;
+  text-transform: capitalize;
+  font: 400 0.8rem $mainFont;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  border-radius: 20px;
+}
+
+.bg-primary {
+  background: $primary-color;
+}
+
+@import "modules/headings.scss";
+@import "modules/catalogue.scss";
+@import "modules/footer.scss";
+@import "modules/forms.scss";

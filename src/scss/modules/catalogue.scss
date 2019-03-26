@@ -1,0 +1,61 @@
+.catalogue-grid > li {
+  border: 1px solid $light-color;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  transition: all 0.3s ease;
+
+  .cat-img {
+    @include size(70px, auto);
+    margin: 0 20px 20px 0;
+  }
+  .cat-desc {
+    flex: 6;
+    min-width: 200px;
+    margin-bottom: 10px;
+  }
+  .cat-btn {
+    display: flex;
+    flex-flow: row wrap;
+    button,
+    .button {
+      text-align: center;
+      display: block;
+      margin: 0;
+      margin-left: 10px;
+      padding: 12px;
+      @include size(40px);
+      background-color: $light-color;
+      color: $default-color;
+      text-transform: capitalize;
+      font-weight: 600;
+      border: 0;
+      outline: 0;
+      border-radius: 20px;
+      transition: all 0.5s ease;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  p {
+    margin: 0 0 0.3rem 0;
+  }
+  &:hover {
+    transform: translate(0, -1px);
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.1);
+    .cat-btn button,
+    .cat-btn .button {
+      background-color: $primary-color;
+      cursor: pointer;
+      &.danger {
+        background-color: $danger-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+footer {
+  background: $secondary-color;
+  color: $default-color;
+  height: 60px;
+  font-size: 0.8rem;
+  padding: 20px;
+  text-align: center;
+  a:visited {
+    color: $primary-color;
+  }
+}

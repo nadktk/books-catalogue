@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Books Catalogue</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but this app doesn't work properly without JavaScript
+        enabled. Please enable it to continue.</strong
+      >
+    </noscript>
+    <div class="wrapper">
+      <section>
+        <h1>Books Catalogue</h1>
+
+        <a href="index.html" class="button bg-primary" title="to the catalogue">
+          <i class="fas fa-arrow-left"></i>&nbsp;&nbsp;Back to the catalogue
+        </a>
+        <hr />
+        <h3>Add or Edit Book</h3>
+
+        <form id="add-book-form">
+          <strong>Title: </strong>
+          <input
+            type="text"
+            name="title"
+            value=""
+            placeholder="* book title"
+            required
+          />
+          <strong>Author (or authors): </strong>
+          <input
+            type="text"
+            name="authors"
+            value=""
+            placeholder="* author(s)"
+            required
+          />
+          <strong>Publisher: </strong>
+          <input
+            type="text"
+            name="publisher"
+            value=""
+            placeholder="* publisher"
+            required
+          />
+          <strong>Address: </strong>
+          <input type="text" name="address" value="" placeholder="address" />
+          <strong>Phone: </strong>
+          <input type="text" name="phone" value="" placeholder="phone" />
+          <strong>Year: </strong>
+          <input
+            type="text"
+            name="year"
+            value=""
+            placeholder="* year"
+            required
+          />
+          <strong>Category: </strong>
+          <input
+            type="text"
+            name="category"
+            value=""
+            placeholder="* category"
+            required
+          />
+          <hr />
+          <strong>Picture URL: </strong>
+          <input type="text" name="photo" value="" placeholder="url" />
+          <input type="submit" value="submit" />
+        </form>
+      </section>
+    </div>
+    <footer>
+      Made as a test task
+    </footer>
+  </body>
+</html>

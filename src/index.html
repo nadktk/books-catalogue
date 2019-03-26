@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Books Catalogue</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but this app doesn't work properly without JavaScript
+        enabled. Please enable it to continue.</strong
+      >
+    </noscript>
+    <div class="wrapper">
+      <section>
+        <h1>Books Catalogue</h1>
+
+        <div class="add-book">
+          <a href="edit.html" class="button bg-primary" title="add book">
+            <i class="fas fa-plus"></i>&nbsp;&nbsp;Add book
+          </a>
+        </div>
+        <div class="filter">
+          <form action="" id="filter">
+            <label for="searchline"> <strong>Search: </strong></label>
+            <input
+              type="text"
+              name="searchline"
+              id="filter-searchline"
+              placeholder=""
+            />
+            <label for="category"> <strong>Select category: </strong></label>
+            <select name="category" id="filter-category"></select>
+            <div>
+              <input type="submit" value="Apply filters" />
+              <button id="filter-clear">
+                Clear filters
+              </button>
+            </div>
+          </form>
+        </div>
+        <ul id="catalogue" class="catalogue-grid"></ul>
+      </section>
+    </div>
+    <footer>
+      Made as a test task
+    </footer>
+  </body>
+</html>
