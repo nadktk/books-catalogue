@@ -21,10 +21,14 @@
     </noscript>
     <div class="wrapper">
       <section>
-        <h1>Add Book to the Catalogue</h1>
+        <h1>Books Catalogue</h1>
+
         <a href="index.html" class="button bg-primary" title="to the catalogue">
           <i class="fas fa-arrow-left"></i>&nbsp;&nbsp;Back to the catalogue
         </a>
+        <hr />
+        <h3>Add or Edit Book</h3>
+
         <form id="add-book-form">
           <strong>Title: </strong>
           <input
@@ -34,7 +38,7 @@
             placeholder="* book title"
             required
           />
-          <strong>Author (or authors, use commas to separate): </strong>
+          <strong>Author (or authors): </strong>
           <input
             type="text"
             name="authors"
@@ -72,10 +76,13 @@
           />
           <hr />
           <strong>Picture URL: </strong>
-          <input type="text" name="photo" value="" placeholder="url" required />
+          <input type="text" name="photo" value="" placeholder="url" />
           <input type="submit" value="submit" />
         </form>
       </section>
     </div>
+    <footer>
+      Made as a test task
+    </footer>
   <script type="text/javascript" src="/assets/js/app.js"></script></body>
 </html>

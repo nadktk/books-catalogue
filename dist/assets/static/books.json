@@ -1,0 +1,32 @@
+[
+  {
+    "title": "A Feast for Crows (A Song of Ice and Fire)",
+    "authors": "George R. R. Martin",
+    "year": "2011",
+    "publisher": "HarperVoyager",
+    "address": "195 Broadway New York",
+    "phone": "+44 01 8658 8373",
+    "photo": ["assets/img/feast-for-crows.jpg"],
+    "category": "Fantasy"
+  },
+  {
+    "title": "One Year to an Organized Life",
+    "authors": "Regina Leeds",
+    "year": "2008",
+    "publisher": "Da Capo Lifelong Books",
+    "address": "54913 1st Da Capo Press Ed edition",
+    "phone": "+44 45 2555 4911",
+    "photo": ["assets/img/one-year-to-an-organized-life.jpg"],
+    "category": "Time management"
+  },
+  {
+    "title": "Alice in Wonderland",
+    "authors": "Lewis Carroll",
+    "year": "2006",
+    "publisher": "Usborne",
+    "address": "5402 S. 122nd East Ave. Tulsa, OK 74146",
+    "phone": "+44 20 7234 3456",
+    "photo": ["assets/img/alice-in-wonderland.jpg"],
+    "category": "Children's Books"
+  }
+]
